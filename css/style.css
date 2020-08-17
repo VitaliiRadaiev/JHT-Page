@@ -929,6 +929,156 @@ h6 {
   margin-left: 35px;
 }
 
+.content-header {
+  padding-left: 15px;
+}
+
+.content-header__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  min-height: 784px;
+}
+
+.content-header__column_1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 46.98436%;
+          flex: 0 1 46.98436%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.content-header__column_2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 53.01564%;
+          flex: 0 1 53.01564%;
+}
+
+.content-header__text-block {
+  width: 100%;
+  max-width: 536px;
+  padding: 38px 30px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.content-header__logo {
+  margin-bottom: 19px;
+}
+
+.content-header__suptitle {
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #3a559f;
+  margin-bottom: 59px;
+}
+
+.content-header__title-wrap {
+  position: relative;
+  min-height: 222px;
+  margin-bottom: 26px;
+}
+
+.content-header__title {
+  position: absolute;
+  display: inline-block;
+  top: 0;
+  left: 0;
+  color: #fff;
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  z-index: 5;
+}
+
+.content-header__title > p {
+  display: inline-block;
+  background: #3a559f;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 30px;
+  white-space: nowrap;
+}
+
+.content-header__title > p:not(:last-child) {
+  margin-bottom: -30px;
+}
+
+.content-header__title > p._mode:nth-child(3) {
+  padding-right: 158px;
+}
+
+.content-header__title > p:first-child {
+  padding-top: 35px;
+}
+
+.content-header__title > p:last-child {
+  padding-bottom: 28px;
+}
+
+.content-header__text {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #3f3f3f;
+  max-width: 469px;
+}
+
+.content-header__text > p {
+  margin-bottom: 19px;
+}
+
+.content-header__img {
+  height: 100%;
+  width: 100%;
+}
+
+.content-btn > a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  padding: 15px 65px 15px 30px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  color: #fff;
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 20px;
+  text-transform: uppercase;
+  min-width: 271px;
+  min-height: 63px;
+  background: #3a559f;
+}
+
+.content-btn > a > span {
+  position: absolute;
+  right: 45px;
+}
+
 .slick-slider {
   position: relative;
 }
@@ -2664,7 +2814,6 @@ textarea.input {
 .industries__cards > a {
   width: 20%;
   height: 50%;
-  min-width: 268px;
   min-height: 268px;
   background: purple;
   display: block;
@@ -2689,16 +2838,7 @@ textarea.input {
   position: relative;
   height: 100%;
   width: 100%;
-  min-width: 268px;
   min-height: 268px;
-  /*		&:before {
-			position: absolute;
-			content: '';
-			top: 50%;
-			left: 50%;
-			background:rgba(#000, 0.48);
-			z-index: 1;
-		}*/
 }
 
 .card-industries__text {
@@ -2892,6 +3032,930 @@ textarea.input {
   font-weight: 300;
   line-height: 16px;
   color: #acacac;
+}
+
+.aer-info {
+  padding: 109px 15px 80px;
+}
+
+.aer-info__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  color: #3f3f3f;
+}
+
+.aer-info__column_1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45.31607%;
+          flex: 0 1 45.31607%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.aer-info__column_2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 54.68393%;
+          flex: 0 1 54.68393%;
+}
+
+.aer-info__title {
+  max-width: 508px;
+  padding-right: 35px;
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.aer-info__text {
+  max-width: 642px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  padding: 2px 0 0 9px;
+}
+
+.aer-info__text > p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.our-values {
+  padding: 62px 0 100px;
+}
+
+.our-values__body .hr {
+  height: 5px;
+  width: 100%;
+  background: #3a559f;
+}
+
+.our-values__title {
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #3f3f3f;
+  text-align: center;
+  margin-bottom: 33px;
+}
+
+.our-values__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 1300px;
+}
+
+.our-values__list > li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 260px;
+          flex: 0 0 260px;
+  height: 191px;
+  margin-bottom: 35px;
+}
+
+.our-values__list > li:nth-child(1) .our-values__icon {
+  margin-top: 9px;
+}
+
+.our-values__list > li:nth-child(2) .our-values__icon {
+  margin-top: 18px;
+}
+
+.our-values__list > li:nth-child(3) .our-values__icon {
+  margin-top: 13px;
+}
+
+.our-values__list > li:nth-child(4) .our-values__icon {
+  margin-top: 3px;
+  margin-bottom: 13px;
+}
+
+.our-values__list > li:nth-child(5) .our-values__icon {
+  margin-top: 11px;
+}
+
+.our-values__hexagon-wrap {
+  position: relative;
+  width: 227px;
+  height: 191px;
+}
+
+.our-values__hexagon {
+  position: relative;
+}
+
+.our-values__hexagon:before {
+  position: absolute;
+  content: '';
+  bottom: 3px;
+  left: 50%;
+  height: 37px;
+  width: 2px;
+  -webkit-transform: translate(-50%, 100%);
+      -ms-transform: translate(-50%, 100%);
+          transform: translate(-50%, 100%);
+  background: #3a559f;
+}
+
+.our-values__hexagon .hex {
+  stroke: #3a559f;
+  stroke-width: 2;
+}
+
+.our-values__label {
+  position: absolute;
+  top: 13px;
+  left: 0;
+  background: #2598e9;
+  width: 65px;
+  height: 65px;
+  border-radius: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 38px;
+  font-weight: 700;
+  line-height: 38px;
+  text-transform: uppercase;
+}
+
+.our-values__hexagon-shadow {
+  position: absolute;
+  top: 50%;
+  right: 22px;
+  width: 96px;
+  height: 166px;
+  background: #3a559f;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: -1;
+}
+
+.our-values__hexagon-shadow:before,
+.our-values__hexagon-shadow:after {
+  position: absolute;
+  content: '';
+  top: 50%;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.our-values__hexagon-shadow:before {
+  background: #3a559f;
+  -webkit-transform: translateY(-50%) rotate(60deg);
+      -ms-transform: translateY(-50%) rotate(60deg);
+          transform: translateY(-50%) rotate(60deg);
+}
+
+.our-values__hexagon-shadow:after {
+  background: #3a559f;
+  -webkit-transform: translateY(-50%) rotate(-60deg);
+      -ms-transform: translateY(-50%) rotate(-60deg);
+          transform: translateY(-50%) rotate(-60deg);
+}
+
+.our-values__hexagon-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  text-align: center;
+  padding: 15px 30px;
+}
+
+.our-values__icon {
+  margin-bottom: 20px;
+}
+
+.our-values__text {
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  text-transform: uppercase;
+  font-weight: 500;
+  text-transform: none;
+  color: #3a559f;
+}
+
+.our-values__subtext {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 260px;
+          flex: 0 0 260px;
+  padding: 0 22px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #acacac;
+}
+
+.our-values__list-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 1300px;
+  margin-top: 42px;
+}
+
+.our-values__list-text > li {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 260px;
+          flex: 0 0 260px;
+  padding: 0 22px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #acacac;
+}
+
+.about-us .content-header__title > p:nth-child(2) {
+  padding-right: 21px;
+}
+
+.principles__body {
+  padding: 84px 15px 23px;
+  max-width: 1185px;
+  margin: 0 auto;
+}
+
+.principles__title,
+.our-company__title {
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  color: #3f3f3f;
+  margin-bottom: 85px;
+}
+
+.principles__cards {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: -12.5px;
+}
+
+.principles__item {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 393px;
+          flex: 0 0 393px;
+  padding: 0 12.5px;
+  margin-bottom: 50px;
+}
+
+.card-principles__inner {
+  position: relative;
+  padding: 1px 39px;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.card-principles__img {
+  width: 368px;
+  height: 446px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+.card-principles__text-content {
+  margin-top: 227px;
+  background: #3a559f;
+  color: #fff;
+  text-align: center;
+  padding: 50px 35px 45px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.card-principles__title {
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+}
+
+.card-principles__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.our-company__row:first-child {
+  margin-bottom: 53px;
+}
+
+.our-company__text-content {
+  padding: 50px 15px 50px;
+  max-width: 1185px;
+  margin: 0 auto;
+}
+
+.our-company__title {
+  margin-bottom: 60px;
+}
+
+.our-company__text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.our-company__text > div {
+  width: 50%;
+}
+
+.our-company__text > div:first-child {
+  padding-right: 27px;
+}
+
+.our-company__text > div:last-child {
+  padding-left: 28px;
+}
+
+.our-company__text > div > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.our-company__text > div > p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.bottom-our-company {
+  position: relative;
+  height: 0;
+  padding-bottom: 52%;
+}
+
+.bottom-our-company:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.27);
+  z-index: 1;
+}
+
+.bottom-our-company__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.bottom-our-company__text-wrap {
+  position: absolute;
+  z-index: 1;
+  bottom: 15%;
+  left: 7%;
+  color: #fff;
+}
+
+.bottom-our-company__suptitle {
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 60px;
+  text-transform: uppercase;
+  margin-bottom: -1%;
+  font-size: calc(20px + 40 * (100vw / 1440));
+  line-height: calc(20px + 40 * (100vw / 1440));
+}
+
+.bottom-our-company__title {
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 107px;
+  font-weight: 700;
+  line-height: 107px;
+  text-transform: uppercase;
+  font-size: calc(35px + 72 * (100vw / 1440));
+  line-height: calc(35px + 72 * (100vw / 1440));
+}
+
+.about-us.our-values {
+  padding-top: 77px;
+  padding-bottom: 129px;
+}
+
+.about-us .our-values__list {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.about-us .our-values__list-text {
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+}
+
+.about-us .our-values__label {
+  display: none;
+}
+
+.industry.industries {
+  background: #3a559f;
+}
+
+.industry-content-block {
+  background: #344e96;
+}
+
+.industry-content-block_1 .industry-content-block__body {
+  padding: 205px 0px 53px;
+}
+
+.industry-content-block_2 {
+  background: #fff;
+}
+
+.industry-content-block_3 .industry-content-block__body {
+  padding: 100px 0px 56px;
+}
+
+.industry-content-block__body {
+  padding: 100px 0px 100px;
+  width: 100%;
+}
+
+.industry-content-block__row_1 {
+  position: relative;
+  min-height: 537px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 20px 0;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 1155px;
+  margin: 0 auto;
+}
+
+.industry-content-block__row_2 {
+  max-width: 1185px;
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.industry-content-block__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 82.51082%;
+}
+
+.industry-content-block__testimonial {
+  position: relative;
+  z-index: 2;
+}
+
+.industry-content-block__testimonial .testimonial {
+  padding: 39px 63px 39px 54px;
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+}
+
+.industry-content-block__testimonial .testimonial__title {
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  color: #3f3f3f;
+}
+
+.bottom-industry-block-content {
+  color: #fff;
+  padding: 33px 0 30px;
+}
+
+.bottom-industry-block-content__title {
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  margin-bottom: 24px;
+}
+
+.bottom-industry-block-content__text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.bottom-industry-block-content__column > p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.bottom-industry-block-content__column > p:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.bottom-industry-block-content__column_1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 18.2684%;
+          flex: 0 0 18.2684%;
+  padding-top: 10px;
+  padding-right: 15px;
+}
+
+.bottom-industry-block-content__column_2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40.8658%;
+          flex: 0 1 40.8658%;
+  padding-right: 31.5px;
+}
+
+.bottom-industry-block-content__column_3 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 40.8658%;
+          flex: 0 1 40.8658%;
+  padding-left: 30.5px;
+}
+
+.bottom-industry-block-content__link {
+  margin-top: -8px;
+}
+
+.bottom-industry-block-content__link > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #2598e9;
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  font-weight: 300;
+  text-transform: none;
+}
+
+.bottom-industry-block-content__link > a > span:before,
+.bottom-industry-block-content__link > a > span:after {
+  background: #2598e9;
+}
+
+.logo-amazon {
+  max-width: 161px;
+  display: inline-block;
+}
+
+.logo-amazon > img {
+  width: 100%;
+}
+
+.service.content-header {
+  position: relative;
+  z-index: 2;
+}
+
+.service.services {
+  position: relative;
+  z-index: 1;
+}
+
+.service .services__body {
+  overflow: visible;
+}
+
+.service .services__list {
+  position: relative;
+  margin-top: 151px;
+  top: 0;
+}
+
+.service .services__bg-top {
+  top: -150px;
+}
+
+.service .services__bg-bottom {
+  bottom: auto;
+  top: 300px;
+  height: 386px;
+  overflow: hidden;
+  padding-top: 151px;
+}
+
+.service-content-left-text {
+  padding: 98px 0 104px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #344e96;
+}
+
+.service-content-left-text__body {
+  max-width: 1255px;
+  width: 100%;
+  position: relative;
+  min-height: 537px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.service-content-left-text__img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: 81.67331%;
+}
+
+.service-content-left-text__card-wrap {
+  position: relative;
+  z-index: 2;
+}
+
+.card-service {
+  max-width: 471px;
+  width: 100%;
+  position: relative;
+  padding: 1px 0;
+  display: inline-block;
+}
+
+.card-service__hexagon {
+  width: 261px;
+  height: 227px;
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  z-index: 2;
+}
+
+.card-service__hexagon-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 25px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.card-service__icon {
+  margin-bottom: 10px;
+}
+
+.card-service__hexagon-text {
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #fff;
+  text-align: center;
+}
+
+.card-service__text {
+  background: rgba(255, 255, 255, 0.95);
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 146px 46px 37px 64px;
+  margin-top: 117px;
+}
+
+.service-content-right-text {
+  padding: 98px 15px 104px 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  background-color: #fff;
+}
+
+.service-content-right-text__body {
+  max-width: 1255px;
+  width: 100%;
+  position: relative;
+  min-height: 537px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 20px 0;
+}
+
+.service-content-right-text__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 81.67331%;
+}
+
+.service-content-right-text__card-wrap {
+  position: relative;
+  z-index: 2;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  width: 100%;
+}
+
+.case-study__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 20px 50px;
+}
+
+.case-study__aside {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 473px;
+          flex: 0 0 473px;
+  background: gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+.case-study__cards {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.aside-case-study {
+  width: 400px;
+  height: 300px;
+  background: red;
+}
+
+.case-study-cards-list {
+  margin: 0 -9.5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.case-study-cards-list > li {
+  padding: 0 9.5px;
+  width: 50%;
+  margin-bottom: 104px;
+}
+
+.case-study-card {
+  position: relative;
+  background: #c4c4c4;
+}
+
+.case-study-card__inner {
+  position: relative;
+  padding: 38px 20px 0;
+  min-height: 446px;
+  overflow: hidden;
+  height: 100%;
+  width: 100%;
+}
+
+.case-study-card__img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 93.27354%;
+}
+
+.case-study-card__img img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.case-study-card__hever-box {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  background: #fff;
+  height: 100%;
+  width: 100%;
+  max-width: 351px;
+  padding: 0px 40px 30px;
+  -webkit-transition: all .4s ease;
+  -o-transition: all .4s ease;
+  transition: all .4s ease;
+  margin: 0 auto;
+}
+
+.case-study-card__title {
+  height: 118px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.case-study-card__title.smalltitle {
+  font-size: 20px;
 }
 
 .footer {
@@ -3140,6 +4204,12 @@ textarea.input {
   }
 }
 
+@media (min-width: 1430px) {
+  .service .services__body {
+    min-height: 686px;
+  }
+}
+
 @media (max-width: 1430px) {
   .services__body {
     overflow: visible;
@@ -3149,18 +4219,6 @@ textarea.input {
     width: 957px;
   }
 
-  .industries__resieze-box {
-    padding-bottom: 0;
-    height: auto;
-    min-height: 536px;
-  }
-
-  .industries__cards {
-    position: static;
-  }
-}
-
-@media (max-width: 1420px) {
   .services__list {
     padding-left: 40px;
   }
@@ -3183,6 +4241,47 @@ textarea.input {
 
   .services__bg-bottom {
     display: none;
+  }
+
+  .industries__resieze-box {
+    padding-bottom: 0;
+    height: auto;
+    min-height: 536px;
+  }
+
+  .industries__cards {
+    position: static;
+  }
+
+  .industries__cards > a {
+    min-width: 268px;
+  }
+
+  .our-values__body .hr {
+    display: none;
+  }
+
+  .our-values__row_2 {
+    display: none;
+  }
+
+  .our-values__list {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    width: auto;
+    padding: 0 15px;
+  }
+
+  .our-values__list > li {
+    height: auto;
+    margin-bottom: 50px;
+  }
+
+  .our-values__hexagon-wrap {
+    margin-bottom: 50px;
   }
 }
 
@@ -3320,6 +4419,47 @@ textarea.input {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+
+  .content-header {
+    padding-left: 0;
+  }
+
+  .content-header__body {
+    display: block;
+  }
+
+  .content-header__text-block {
+    max-width: none;
+    display: block;
+    padding: 40px 15px 30px;
+  }
+
+  .content-header__logo {
+    margin: 0 auto 20px;
+  }
+
+  .content-header__suptitle {
+    text-align: center;
+  }
+
+  .content-header__title {
+    position: static;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .content-header__text {
+    max-width: none;
+    text-align: center;
+  }
+
+  .content-header__btn {
+    text-align: center;
+  }
+
+  .content-header__img {
+    min-height: 784px;
   }
 
   .burger-wrap {
@@ -3511,6 +4651,141 @@ textarea.input {
     margin-left: 0;
   }
 
+  .aer-info__body {
+    display: block;
+  }
+
+  .aer-info__title {
+    max-width: none;
+    text-align: center;
+    margin-bottom: 30px;
+    padding-right: 0;
+  }
+
+  .aer-info__text {
+    max-width: none;
+    text-align: center;
+    padding: 0;
+  }
+
+  .principles__title,
+  .our-company__title {
+    text-align: center;
+    margin-bottom: 50px;
+  }
+
+  .our-company__text > div:first-child {
+    padding-right: 10px;
+  }
+
+  .our-company__text > div:last-child {
+    padding-left: 10px;
+  }
+
+  .industry-content-block__row_1 {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+    margin-bottom: 150px;
+    padding: 20px 15px;
+  }
+
+  .industry-content-block__img {
+    width: 100%;
+  }
+
+  .industry-content-block__testimonial {
+    -webkit-transform: translateY(150px);
+        -ms-transform: translateY(150px);
+            transform: translateY(150px);
+  }
+
+  .bottom-industry-block-content__title {
+    text-align: center;
+  }
+
+  .bottom-industry-block-content__text-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .bottom-industry-block-content__column_1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    margin-bottom: 30px;
+    text-align: center;
+    padding-right: 0;
+  }
+
+  .bottom-industry-block-content__column_2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
+  .bottom-industry-block-content__column_3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
+  .service-content-left-text {
+    padding: 98px 0 0px 0px;
+  }
+
+  .service-content-left-text__body {
+    display: block;
+    padding: 0;
+  }
+
+  .service-content-left-text__img {
+    position: relative;
+    width: 100%;
+    min-height: 537px;
+    height: auto;
+  }
+
+  .service-content-left-text__card-wrap {
+    text-align: center;
+    padding: 0 15px;
+    -webkit-transform: translateY(-118px);
+        -ms-transform: translateY(-118px);
+            transform: translateY(-118px);
+  }
+
+  .service-content-right-text {
+    padding: 98px 0 0px 0px;
+  }
+
+  .service-content-right-text__body {
+    display: block;
+    padding: 0;
+  }
+
+  .service-content-right-text__img {
+    position: relative;
+    width: 100%;
+    min-height: 537px;
+    height: auto;
+  }
+
+  .service-content-right-text__card-wrap {
+    display: block;
+    text-align: center;
+    padding: 0 15px;
+    -webkit-transform: translateY(-118px);
+        -ms-transform: translateY(-118px);
+            transform: translateY(-118px);
+  }
+
+  .case-study-cards-list > li {
+    width: 70%;
+  }
+
   .bottom-footer__row_1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -3580,6 +4855,25 @@ textarea.input {
 }
 
 @media (max-width: 767.98px) {
+  .content-header__title {
+    width: 100%;
+    font-size: 50px;
+    line-height: 55px;
+  }
+
+  .content-header__title > p {
+    display: block;
+    text-align: center;
+  }
+
+  .content-header__title > p._mode:nth-child(3) {
+    padding-right: 30px;
+  }
+
+  .content-header__img {
+    min-height: 484px;
+  }
+
   .form__info {
     width: 50px;
     height: 50px;
@@ -3634,6 +4928,83 @@ textarea.input {
 
   .slider-insights__inner {
     max-width: 400px;
+  }
+
+  .aer-info {
+    padding: 50px 15px 50px;
+  }
+
+  .about-us .content-header__title {
+    width: 100%;
+  }
+
+  .our-company__text {
+    display: block;
+  }
+
+  .our-company__text > div:first-child {
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .our-company__text > div:last-child {
+    padding: 0;
+  }
+
+  .our-company__text > div {
+    width: 100%;
+  }
+
+  .bottom-our-company__suptitle {
+    font-size: calc(20px + (40 + 40 * 0.7) * ((100vw - 320px) / 1440));
+    line-height: calc(20px + (40 + 40 * 0.7) * ((100vw - 320px) / 1440));
+  }
+
+  .bottom-our-company__title {
+    font-size: calc(35px + (72 + 72 * 0.7) * ((100vw - 320px) / 1440));
+    line-height: calc(35px + (72 + 72 * 0.7) * ((100vw - 320px) / 1440));
+  }
+
+  .industry .content-header__title {
+    width: 100%;
+  }
+
+  .industry-content-block_1 .industry-content-block__body {
+    padding: 75px 0px 53px;
+  }
+
+  .industry-content-block__row_1 {
+    min-height: 437px;
+  }
+
+  .bottom-industry-block-content__column > p {
+    margin-bottom: 20px !important;
+  }
+
+  .bottom-industry-block-content__column_2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 0;
+  }
+
+  .bottom-industry-block-content__column_3 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    padding: 0;
+  }
+
+  .service-content-left-text__img {
+    min-height: 437px;
+  }
+
+  .service-content-right-text__img {
+    min-height: 437px;
+  }
+
+  .case-study-cards-list > li {
+    width: 90%;
   }
 
   .footer__column_1 {
@@ -3729,9 +5100,17 @@ textarea.input {
   .services__list > li:nth-child(5) {
     z-index: 1;
   }
+
+  .service .services__list {
+    margin-top: 30px;
+  }
 }
 
 @media (max-width: 575px) {
+  .case-study-cards-list > li {
+    width: 100%;
+  }
+
   .footer__body {
     padding: 50px 15px 20px;
   }
@@ -3764,6 +5143,10 @@ textarea.input {
   .testimonial {
     padding: 25px 15px 25px 15px;
   }
+
+  .industry-content-block__testimonial .testimonial {
+    padding: 25px 15px 25px 15px;
+  }
 }
 
 @media (max-width: 479.98px) {
@@ -3781,6 +5164,20 @@ textarea.input {
 
   .sup-footer__title {
     font-size: 30px;
+  }
+
+  .content-header__title {
+    font-size: 35px;
+    line-height: 40px;
+  }
+
+  .content-header__title > p {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+
+  .content-header__img {
+    min-height: 284px;
   }
 
   .banner-header__title {
@@ -3870,6 +5267,84 @@ textarea.input {
 
   .slider-insights__text {
     font-size: 18px;
+  }
+
+  .aer-info__title {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .our-values {
+    padding: 50px 0 50px;
+  }
+
+  .principles__body {
+    padding: 50px 0px 20px;
+  }
+
+  .principles__title,
+  .our-company__title {
+    font-size: 34px;
+    margin-bottom: 30px;
+  }
+
+  .principles__item {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+  }
+
+  .card-principles__inner {
+    padding: 1px 15px;
+  }
+
+  .card-principles__img {
+    width: 100%;
+  }
+
+  .card-principles__text-content {
+    padding: 50px 25px 35px;
+  }
+
+  .our-company__text-content {
+    padding: 50px 15px 20px;
+  }
+
+  .about-us.our-values {
+    padding-top: 60px;
+    padding-bottom: 20px;
+  }
+
+  .industry-content-block_2 .industry-content-block__body {
+    padding: 70px 0px 50px;
+  }
+
+  .industry-content-block__row_1 {
+    min-height: 337px;
+  }
+
+  .service-content-left-text__img {
+    min-height: 337px;
+  }
+
+  .card-service__text {
+    padding: 146px 20px 37px 20px;
+  }
+
+  .service-content-right-text__img {
+    min-height: 337px;
+  }
+
+  .case-study-cards-list > li {
+    margin-bottom: 50px;
+  }
+
+  .case-study-card__inner {
+    padding: 38px 15px 0;
+  }
+
+  .case-study-card__hever-box {
+    padding: 0px 20px 30px;
   }
 
   .bottom-footer__nav {

@@ -855,6 +855,35 @@ if($('.slider-insights').length>0) {
 // === // slider-insights ==================================================================
 
 
+// === content-header__title correct height ==================================================================
+{
+	let titleBox = document.querySelectorAll('.content-header__title-wrap');
+
+	if(titleBox.length > 0) {
+		let observer = new MutationObserver(mutationRecords => {
+			for(let item of titleBox) {
+				let height = item.firstElementChild.clientHeight;
+				item.style.minHeight = height + 'px';			
+			}
+		})
+		
+		for(let item of titleBox) {
+			let height = item.firstElementChild.clientHeight;
+			item.style.minHeight = height + 'px';
+
+
+			observer.observe(item, {
+			  childList: true, 
+			  subtree: true,
+			  characterDataOldValue: true,
+			});
+			
+		}
+	}
+}
+// === // content-header__title correct height ==================================================================
+
+
 
 
 
