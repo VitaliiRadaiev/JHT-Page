@@ -1079,6 +1079,26 @@ h6 {
   right: 45px;
 }
 
+.load-more-btn > a {
+  font-family: "BentonSans";
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #fff;
+  padding: 19px 25px 17px 25px;
+  background: #3a559f;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.load-more-btn > a > span {
+  margin-left: 7px;
+}
+
 .slick-slider {
   position: relative;
 }
@@ -1230,47 +1250,49 @@ h6 {
 .select__label {
   z-index: 2;
   position: absolute;
-  top: -8px;
-  background-color: #f7f7f7;
-  padding: 0 5px;
-  color: #979797;
-  font-weight: 600;
+  left: 30px;
+  top: 10px;
+  color: #b9b8b9;
+  font-family: "BentonSans";
   font-size: 13px;
-  line-height: 16px;
-  left: 20px;
+  font-weight: 400;
+  line-height: 20px;
+  display: block;
+  margin-bottom: -1px;
 }
 
 .select {
   position: relative;
   cursor: pointer;
+  color: #000001;
+  font-family: "BentonSans";
+  font-size: 16px;
+  font-weight: 400;
 }
 
 .select .select-title {
   z-index: 1;
   width: 100%;
-  height: 55px;
-  border: 1px solid #dedede;
+  height: 57px;
   position: relative;
   background-color: #fff;
+  border: 1px solid #eaeaea;
 }
 
 .select .select-title__arrow {
   position: absolute;
   top: 0;
   right: 0px;
-  width: 45px;
+  width: 64px;
   height: 100%;
-  background: url("../img/icons/select-arrow.svg") center no-repeat;
+  background: url("../img/form/aroow-down.svg") center no-repeat;
 }
 
 .select .select-title__value {
-  color: #000;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 53px;
+  line-height: 40px;
   display: block;
   overflow: hidden;
-  padding: 0 45px 0 25px;
+  padding: 18px 64px 0 28px;
   white-space: nowrap;
   text-transform: none;
   -o-text-overflow: ellipsis;
@@ -1286,11 +1308,11 @@ h6 {
   min-width: 100%;
   background-color: #fff;
   border: 1px solid #dedede;
-  padding: 10px 20px 10px 25px;
+  padding: 20px 20px 20px 25px;
 }
 
 .select .select-options-scroll {
-  max-height: 80px;
+  max-height: 120px;
   overflow: auto;
 }
 
@@ -1299,9 +1321,10 @@ h6 {
 }
 
 .select .select-options__value {
-  color: #000;
-  font-size: 20px;
-  margin: 0px 0px 15px 0px;
+  color: #000001;
+  font-size: 16px;
+  margin: 0px 0px 20px 0px;
+  font-family: "BentonSans";
 }
 
 .select .select-options__value:last-child {
@@ -2001,7 +2024,7 @@ textarea.input {
   bottom: 0;
 }
 
-.main-menu__list a {
+.main-menu__list > li > a {
   font-family: "GTWalsheimPro", sans-serif;
   font-size: 30px;
   font-weight: 700;
@@ -2020,7 +2043,7 @@ textarea.input {
   transition: all .2s ease;
 }
 
-.main-menu__list a .hover-hr {
+.main-menu__list > li > a .hover-hr {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
@@ -2045,11 +2068,17 @@ textarea.input {
   -webkit-transform: translateX(100%);
       -ms-transform: translateX(100%);
           transform: translateX(100%);
+}
+
+.main-menu__sublist a {
   color: #fff;
   font-family: "Poppins", sans-serif;
   font-size: 16px;
   font-weight: 400;
   line-height: 30px;
+  -webkit-transition: all .2s ease;
+  -o-transition: all .2s ease;
+  transition: all .2s ease;
 }
 
 .from-navigation {
@@ -3688,9 +3717,11 @@ textarea.input {
 .service .services__bg-bottom {
   bottom: auto;
   top: 300px;
+  left: 0;
   height: 386px;
   overflow: hidden;
   padding-top: 151px;
+  width: 120%;
 }
 
 .service-content-left-text {
@@ -3848,36 +3879,95 @@ textarea.input {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  padding: 40px 20px 50px;
+  padding: 40px 20px 70px;
+  position: relative;
+}
+
+.case-study__body:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 42.56259%;
+  background-color: #f7f7f7;
+  z-index: -1;
+  height: 100%;
 }
 
 .case-study__aside {
   -webkit-box-flex: 0;
-      -ms-flex: 0 0 473px;
-          flex: 0 0 473px;
-  background: gray;
+      -ms-flex: 0 0 452px;
+          flex: 0 0 452px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  padding-right: 21px;
 }
 
 .case-study__cards {
   -webkit-box-flex: 1;
       -ms-flex: 1 1 auto;
           flex: 1 1 auto;
+  padding-top: 89px;
+}
+
+.case-study__load-more-btn {
+  text-align: center;
+  margin-top: 68px;
 }
 
 .aside-case-study {
-  width: 400px;
-  height: 300px;
-  background: red;
+  width: 348px;
+}
+
+.aside-case-study__logo {
+  margin-bottom: 124px;
+}
+
+.aside-case-study__title {
+  color: #fff;
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  background: #3a559f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline-block;
+  padding: 11px 25px 13px 30px;
+  margin-bottom: 17px;
+}
+
+.aside-case-study__form {
+  margin-bottom: 17px;
+}
+
+.aside-case-study__wrap {
+  max-width: 293px;
+}
+
+.aside-case-study__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #3f3f3f;
+  max-width: 300px;
 }
 
 .case-study-cards-list {
-  margin: 0 -9.5px;
+  margin: 0 -21.5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3889,23 +3979,26 @@ textarea.input {
 }
 
 .case-study-cards-list > li {
-  padding: 0 9.5px;
+  padding: 0 21.5px;
   width: 50%;
-  margin-bottom: 104px;
+  margin-bottom: 41px;
 }
 
 .case-study-card {
   position: relative;
-  background: #c4c4c4;
+  -webkit-box-shadow: 0 3px 50px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 3px 50px rgba(0, 0, 0, 0.06);
+  height: 100%;
 }
 
 .case-study-card__inner {
   position: relative;
-  padding: 38px 20px 0;
-  min-height: 446px;
+  padding: 95px 20px 0;
+  min-height: 452px;
   overflow: hidden;
   height: 100%;
   width: 100%;
+  background: #fff;
 }
 
 .case-study-card__img {
@@ -3913,7 +4006,6 @@ textarea.input {
   top: 0;
   left: 0;
   width: 100%;
-  height: 93.27354%;
 }
 
 .case-study-card__img img {
@@ -3929,20 +4021,46 @@ textarea.input {
 .case-study-card__hever-box {
   position: relative;
   z-index: 2;
-  text-align: center;
-  background: #fff;
+  background: rgba(255, 255, 255, 0.95);
   height: 100%;
   width: 100%;
-  max-width: 351px;
-  padding: 0px 40px 30px;
+  max-width: 378px;
+  padding: 0px 35px 30px;
   -webkit-transition: all .4s ease;
   -o-transition: all .4s ease;
   transition: all .4s ease;
   margin: 0 auto;
+  color: #3f3f3f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  min-width: 347px;
+  /* 		@media (min-width: 1650px ) {
+ 			min-height: 557px;
+ 		}*/
+}
+
+.case-study-card__hever-box > a {
+  display: block;
+  text-align: center;
+}
+
+.case-study-card__hever-box > a > span {
+  height: 38px;
+  width: 38px;
+}
+
+.case-study-card__hever-box > a > span:before,
+.case-study-card__hever-box > a > span:after {
+  background-color: #3a559f;
 }
 
 .case-study-card__title {
-  height: 118px;
+  min-height: 146px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3952,10 +4070,564 @@ textarea.input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 23px;
+  font-weight: 700;
+  line-height: 27px;
+  text-transform: uppercase;
+  padding: 15px 0;
 }
 
-.case-study-card__title.smalltitle {
+.case-study-card__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  margin-bottom: 10px;
+}
+
+.blog__body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 40px 20px 70px;
+  position: relative;
+}
+
+.blog__body:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 42.56259%;
+  background-color: #f7f7f7;
+  z-index: -1;
+  height: 100%;
+}
+
+.blog__aside {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 525px;
+          flex: 0 0 525px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-right: 21px;
+}
+
+.blog__cards {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+}
+
+.blog__load-more-btn {
+  text-align: center;
+  margin-top: 68px;
+}
+
+.aside-blog {
+  width: 421px;
+}
+
+.aside-blog__logo {
+  margin-bottom: 124px;
+}
+
+.aside-blog__title {
+  color: #fff;
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  background: #3a559f;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: inline-block;
+  padding: 13px 30px 11px 30px;
+  margin-bottom: 17px;
+}
+
+.aside-blog__form {
+  margin-bottom: 17px;
+}
+
+.aside-blog__wrap {
+  max-width: 293px;
+  margin-bottom: 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 300px;
+          flex: 0 0 300px;
+  padding: 0 3.5px 5px;
+}
+
+.aside-blog__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 30px;
+  color: #3f3f3f;
+  max-width: 300px;
+}
+
+.blog-cards-list {
+  margin: 0 -10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.blog-cards-list > li {
+  padding: 0 10px;
+  width: 50%;
+  margin-bottom: 31px;
+}
+
+.bolg-card {
+  height: 100%;
+}
+
+.bolg-card__inner {
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-shadow: 0 3px 50px rgba(0, 0, 0, 0.06);
+          box-shadow: 0 3px 50px rgba(0, 0, 0, 0.06);
+  padding-bottom: 48px;
+}
+
+.bolg-card__img {
+  width: 100%;
+  min-height: 320px;
+}
+
+.bolg-card__bottom {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background: #fff;
+}
+
+.bolg-card__btn {
+  text-align: right;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.bolg-card__btn > a {
+  display: inline-block;
+  background: #2598e9;
+  color: #fff;
+  padding: 13px 43px 11px;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-transform: uppercase;
+}
+
+.bolg-card__title {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding: 0 45px;
+  margin-bottom: 9px;
+  font-family: "GTWalsheimPro", sans-serif;
   font-size: 20px;
+  font-weight: 700;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #3f3f3f;
+  margin-top: -6px;
+}
+
+.bolg-card__subtitle {
+  padding: 0 45px;
+  font-family: "Poppins", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 23px;
+  color: #3f3f3f;
+}
+
+.case-study-width {
+  margin: 0 auto;
+  max-width: 1185px;
+  padding: 0 15px;
+}
+
+.case-study-detail {
+  position: relative;
+}
+
+.case-study-detail:before {
+  position: absolute;
+  content: '';
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 78%;
+  background-color: #f7f7f7;
+  z-index: -1;
+}
+
+.case-study-detail .content-header__body {
+  min-height: 821px;
+}
+
+.case-study-detail .content-header__column_1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 45%;
+          flex: 0 1 45%;
+}
+
+.case-study-detail .content-header__column_2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 55%;
+          flex: 0 1 55%;
+}
+
+.case-study-detail .content-header__logo {
+  margin-bottom: 70px;
+}
+
+.case-study-detail .content-header__suptitle {
+  margin-bottom: 15px;
+}
+
+.case-study-detail .content-header__title-wrap {
+  margin-bottom: 34px;
+}
+
+.case-study-detail .content-header__title {
+  position: static;
+  color: #3f3f3f;
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 50px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+
+.case-study-detail .content-header__testimonial {
+  -webkit-transform: translateX(48%);
+      -ms-transform: translateX(48%);
+          transform: translateX(48%);
+  position: relative;
+  z-index: 4;
+  margin-bottom: 30px;
+}
+
+.eurofins {
+  margin-top: -8px;
+  padding-bottom: 60px;
+}
+
+.eurofins__logo {
+  display: inline-block;
+  max-width: 387px;
+  margin-bottom: 48px;
+}
+
+.eurofins__logo > img {
+  width: 100%;
+}
+
+.eurofins__text-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.eurofins__text-wrap p {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  color: #3f3f3f;
+  margin-bottom: 20px;
+}
+
+.eurofins__column_1 {
+  padding-right: 41px;
+  width: 50%;
+}
+
+.eurofins__column_2 {
+  padding-left: 54px;
+  width: 50%;
+}
+
+.detail {
+  background-color: #f7f7f7;
+  padding-bottom: 121px;
+}
+
+.detail__title-wrap {
+  margin-bottom: 71px;
+  text-align: center;
+}
+
+.detail__title {
+  display: inline-block;
+  background: #3a559f;
+  color: #fff;
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: uppercase;
+  padding: 22px 100px;
+}
+
+.right-text-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 61px 0  65px;
+}
+
+.right-text-detail__column_1 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 525px;
+          flex: 0 0 525px;
+}
+
+.right-text-detail__column_2 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-left: 30px;
+}
+
+.right-text-detail__img-wrap {
+  width: 525px;
+  height: 329px;
+  background: #fff;
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+
+.right-text-detail__img-wrap:before {
+  position: absolute;
+  content: '';
+  width: 140px;
+  height: 7px;
+  background: #3a559f;
+  top: 50%;
+  -webkit-transform: translate(64%, -50%);
+      -ms-transform: translate(64%, -50%);
+          transform: translate(64%, -50%);
+  right: 0;
+}
+
+.right-text-detail__img {
+  height: 218px;
+  max-width: 458px;
+}
+
+.right-text-detail__img > img {
+  width: 100%;
+}
+
+.right-text-detail__text-wrap {
+  max-width: 505px;
+}
+
+.right-text-detail__second-title {
+  color: #3f3f3f;
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+  margin-bottom: 44px;
+}
+
+.right-text-detail__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.right-text-detail__text p {
+  margin: 20px 0;
+}
+
+.left-text-detail {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 61px 0 65px;
+}
+
+.left-text-detail__column_1 {
+  -webkit-box-flex: 1;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  padding-right: 30px;
+}
+
+.left-text-detail__column_2 {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 525px;
+          flex: 0 0 525px;
+}
+
+.left-text-detail__img-wrap {
+  width: 525px;
+  min-height: 329px;
+  background: #fff;
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 10px 50px rgba(0, 0, 0, 0.05);
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding: 15px 0;
+}
+
+.left-text-detail__img-wrap:before {
+  position: absolute;
+  content: '';
+  width: 140px;
+  height: 7px;
+  background: #3a559f;
+  top: 50%;
+  -webkit-transform: translate(-71%, -50%);
+      -ms-transform: translate(-71%, -50%);
+          transform: translate(-71%, -50%);
+  left: 0;
+}
+
+.left-text-detail__img {
+  position: absolute;
+  top: 0;
+  right: 41px;
+  width: 56.57143%;
+  height: 100%;
+}
+
+.left-text-detail__testimonial {
+  min-height: 155px;
+  min-width: 200px;
+  max-width: 267px;
+  background: #fff;
+  -webkit-box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 50px rgba(0, 0, 0, 0.1);
+  opacity: 0.95;
+  color: #3f3f3f;
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 20px;
+  padding: 28px 41px 25px 39px;
+  margin-left: 41px;
+  display: inline-block;
+}
+
+.left-text-detail__text-wrap {
+  max-width: 505px;
+}
+
+.left-text-detail__second-title {
+  color: #3f3f3f;
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 35px;
+  text-transform: uppercase;
+  margin-bottom: 44px;
+}
+
+.left-text-detail__text {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+}
+
+.left-text-detail__text p {
+  margin: 20px 0;
+}
+
+.related-case {
+  padding: 89px 0 51px;
+}
+
+.related-case__title {
+  font-family: "GTWalsheimPro", sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 59px;
+  color: #3f3f3f;
+}
+
+.related-case__cards .case-study-cards-list {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.related-case__cards .case-study-cards-list > li {
+  width: 38.5%;
+  /*				@media (min-width: 1650px ) {
+					width: 50%;
+				}*/
 }
 
 .footer {
@@ -4191,12 +4863,20 @@ textarea.input {
     background: #1b3271;
   }
 
+  .main-menu__sublist a:hover {
+    text-decoration: underline;
+  }
+
   .projects__menu > li > a:hover {
     color: #2598e9;
   }
 
   .projects__menu > li > a:hover:before {
     background: #2598e9;
+  }
+
+  .case-study-detail .content-header__text-block {
+    max-width: 517px;
   }
 
   .footer__list > li > a:hover {
@@ -4207,6 +4887,28 @@ textarea.input {
 @media (min-width: 1430px) {
   .service .services__body {
     min-height: 686px;
+  }
+}
+
+@media (min-width: 1650px) {
+  .case-study-card__inner {
+    min-height: 652px;
+  }
+
+  .blog-cards-list {
+    margin: 0 -20px;
+  }
+
+  .blog-cards-list > li {
+    padding: 0 20px;
+  }
+
+  .bolg-card__img {
+    min-height: 500px;
+  }
+
+  .related-case__cards .case-study-card__inner {
+    min-height: 452px;
   }
 }
 
@@ -4283,6 +4985,34 @@ textarea.input {
   .our-values__hexagon-wrap {
     margin-bottom: 50px;
   }
+
+  .case-study__body {
+    padding: 40px 15px 70px;
+  }
+
+  .case-study__aside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 376px;
+            flex: 0 0 376px;
+  }
+
+  .case-study-cards-list {
+    margin: 0 -10px;
+  }
+
+  .case-study-cards-list > li {
+    padding: 0 10px;
+  }
+
+  .blog__body {
+    padding: 40px 15px 70px;
+  }
+
+  .blog__aside {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 376px;
+            flex: 0 0 376px;
+  }
 }
 
 @media (max-width: 1350px) {
@@ -4316,6 +5046,126 @@ textarea.input {
     -webkit-box-flex: 0;
         -ms-flex: 0 1 50%;
             flex: 0 1 50%;
+  }
+}
+
+@media (max-width: 1320px) {
+  .case-study__body {
+    display: block;
+  }
+
+  .case-study__aside {
+    padding-right: 0px;
+  }
+
+  .aside-case-study {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .aside-case-study__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    margin-bottom: 70px;
+  }
+
+  .aside-case-study__title-wrap {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    text-align: right;
+  }
+
+  .aside-case-study__form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+  }
+
+  .aside-case-study__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    max-width: 346px;
+  }
+
+  .blog__body {
+    display: block;
+  }
+
+  .blog__aside {
+    padding-right: 0px;
+  }
+
+  .aside-blog {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+
+  .aside-blog__logo {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    margin-bottom: 70px;
+  }
+
+  .aside-blog__title-wrap {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    text-align: right;
+  }
+
+  .aside-blog__form {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .aside-blog__text {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 50%;
+            flex: 0 1 50%;
+    max-width: 346px;
+  }
+}
+
+@media (max-width: 1240px) {
+  .right-text-detail__img-wrap:before {
+    display: none;
+  }
+
+  .left-text-detail__img-wrap:before {
+    display: none;
+  }
+}
+
+@media (max-width: 1200px) {
+  .related-case__cards .case-study-cards-list > li {
+    width: 50%;
   }
 }
 
@@ -4558,11 +5408,11 @@ textarea.input {
     max-width: none;
   }
 
-  .main-menu__list a .hover-hr {
+  .main-menu__list > li > a .hover-hr {
     display: none;
   }
 
-  .main-menu__list a {
+  .main-menu__list > li > a {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
@@ -4786,6 +5636,125 @@ textarea.input {
     width: 70%;
   }
 
+  .blog-cards-list > li {
+    width: 70%;
+  }
+
+  .case-study-detail .testimonial {
+    margin: 0 auto;
+  }
+
+  .case-study-detail .content-header__title {
+    text-align: center;
+  }
+
+  .case-study-detail .content-header__testimonial {
+    -webkit-transform: translateX(0%);
+        -ms-transform: translateX(0%);
+            transform: translateX(0%);
+  }
+
+  .eurofins {
+    margin-top: 0;
+    padding-top: 50px;
+  }
+
+  .eurofins__logo {
+    margin-bottom: 28px;
+  }
+
+  .eurofins__column_1 {
+    padding-right: 15px;
+  }
+
+  .eurofins__column_2 {
+    padding-left: 15px;
+  }
+
+  .detail {
+    padding-bottom: 90px;
+  }
+
+  .right-text-detail {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .right-text-detail__column_1 {
+    margin: 0 auto;
+  }
+
+  .right-text-detail__column_2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding-left: 0;
+  }
+
+  .right-text-detail__text-wrap {
+    max-width: none;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .right-text-detail__second-title {
+    margin-bottom: 20px;
+  }
+
+  .left-text-detail {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .left-text-detail__column_1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 100%;
+            flex: 0 1 100%;
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+    padding-right: 0;
+  }
+
+  .left-text-detail__column_2 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 100%;
+            flex: 0 0 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .left-text-detail__text-wrap {
+    max-width: none;
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  .left-text-detail__second-title {
+    margin-bottom: 20px;
+  }
+
+  .related-case__title {
+    text-align: center;
+  }
+
+  .related-case__cards .case-study-cards-list {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
+  .related-case__cards .case-study-cards-list > li {
+    width: 70%;
+  }
+
   .bottom-footer__row_1 {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -5003,7 +5972,115 @@ textarea.input {
     min-height: 437px;
   }
 
+  .case-study__body {
+    padding: 40px 15px 40px;
+  }
+
+  .aside-case-study {
+    display: block;
+  }
+
+  .aside-case-study__logo {
+    margin: 0 auto 50px;
+  }
+
+  .aside-case-study__title-wrap {
+    text-align: center;
+  }
+
+  .aside-case-study__wrap {
+    margin: 0 auto;
+  }
+
+  .aside-case-study__text {
+    max-width: none;
+    text-align: center;
+  }
+
   .case-study-cards-list > li {
+    width: 90%;
+  }
+
+  .blog__body {
+    padding: 40px 15px 40px;
+  }
+
+  .aside-blog {
+    display: block;
+  }
+
+  .aside-blog__logo {
+    margin: 0 auto 50px;
+  }
+
+  .aside-blog__title-wrap {
+    text-align: center;
+  }
+
+  .aside-blog__wrap {
+    margin: 0 auto;
+  }
+
+  .aside-blog__text {
+    max-width: none;
+    text-align: center;
+  }
+
+  .blog-cards-list > li {
+    width: 90%;
+  }
+
+  .eurofins {
+    padding-bottom: 30px;
+  }
+
+  .eurofins__text-wrap {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+
+  .eurofins__column_1 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .eurofins__column_2 {
+    width: 100%;
+    padding: 0;
+  }
+
+  .detail {
+    padding-bottom: 40px;
+  }
+
+  .right-text-detail {
+    padding: 38px 0;
+  }
+
+  .right-text-detail__column_1 {
+    -webkit-box-flex: 0;
+        -ms-flex: 0 1 auto;
+            flex: 0 1 auto;
+  }
+
+  .right-text-detail__img-wrap {
+    width: auto;
+    max-width: 525px;
+    padding: 0 30px;
+  }
+
+  .left-text-detail {
+    padding: 38px 0;
+  }
+
+  .left-text-detail__img-wrap {
+    width: auto;
+    max-width: 525px;
+    padding: 0 30px;
+    width: 100%;
+  }
+
+  .related-case__cards .case-study-cards-list > li {
     width: 90%;
   }
 
@@ -5108,6 +6185,14 @@ textarea.input {
 
 @media (max-width: 575px) {
   .case-study-cards-list > li {
+    width: 100%;
+  }
+
+  .blog-cards-list > li {
+    width: 100%;
+  }
+
+  .related-case__cards .case-study-cards-list > li {
     width: 100%;
   }
 
@@ -5335,6 +6420,10 @@ textarea.input {
     min-height: 337px;
   }
 
+  .aside-case-study__title {
+    font-size: 36px;
+  }
+
   .case-study-cards-list > li {
     margin-bottom: 50px;
   }
@@ -5345,6 +6434,49 @@ textarea.input {
 
   .case-study-card__hever-box {
     padding: 0px 20px 30px;
+    min-width: auto;
+  }
+
+  .aside-blog__title {
+    font-size: 36px;
+  }
+
+  .blog-cards-list > li {
+    margin-bottom: 50px;
+  }
+
+  .case-study-detail .content-header__title {
+    font-size: 36px;
+    line-height: 40px;
+  }
+
+  .detail {
+    padding-bottom: 0px;
+  }
+
+  .left-text-detail__img-wrap {
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: flex-end;
+  }
+
+  .left-text-detail__img {
+    right: 0;
+    width: 66.66667%;
+  }
+
+  .left-text-detail__testimonial {
+    margin-left: 0;
+  }
+
+  .related-case {
+    padding: 50px 0 30px;
+  }
+
+  .related-case__title {
+    font-size: 34px;
+    line-height: 40px;
+    margin-bottom: 30px;
   }
 
   .bottom-footer__nav {
