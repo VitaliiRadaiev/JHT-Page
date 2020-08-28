@@ -743,6 +743,7 @@ $(document).ready(function() {
 			if(document.documentElement.clientWidth >= 992) {
 				navigation.style.width = '100%';
 				isOpen = true;
+				$('.burger-wrap').addClass('open');
 			} else {
 				$('.content-navigation__inner').slideToggle(300);
 				isOpen = true;
@@ -751,6 +752,7 @@ $(document).ready(function() {
 			if(document.documentElement.clientWidth >= 992) {
 				navigation.style.width = '82px';
 				isOpen = false;
+				$('.burger-wrap').removeClass('open');
 			} else {
 				$('.content-navigation__inner').slideToggle(300);
 				isOpen = false;
@@ -1016,6 +1018,29 @@ if (isMobile.any()) {
 	}
 }
 
+{
+	let cardList = document.querySelector('.case-study-cards-list');
+
+	if(cardList) {
+
+		let observer = new MutationObserver(mutationRecords => {
+			if(isMobile.any()) {
+				correctHeightMobile();
+				console.log('mobile texs')
+			} else {
+				correctHeight();
+				console.log('test')
+			}
+		})
+		
+		observer.observe(cardList, {
+		  childList: true, 
+		  subtree: true,
+		  characterDataOldValue: true,
+		});
+	}
+}
+
 
 // ==== // case-study-card hover =======================================================
 
@@ -1028,6 +1053,76 @@ if (loadMoreBtn) {
 	})
 }
 // ==== // load-more-btn =======================================================
+
+
+
+
+// ==== animation number =======================================================
+    if($(".results__list").length>0){
+      var textPos = $('.results__list').offset().top;
+
+      let item1 = document.querySelector('.results__list .item_1').dataset.maxvalue;
+      let item2 = document.querySelector('.results__list .item_2').dataset.maxvalue;
+      let item3 = document.querySelector('.results__list .item_3').dataset.maxvalue;
+      let item4 = document.querySelector('.results__list .item_4').dataset.maxvalue;
+      let item5 = document.querySelector('.results__list .item_5').dataset.maxvalue;
+
+      $(window).scroll(function() {
+
+        var topOfWindow = $(window).scrollTop();
+
+        if($('.results__list .item').hasClass('stop')){
+          return;
+        }
+
+        if (textPos < topOfWindow + 500) {
+          $('.results__list .item_1 p').animateNumber({
+            number: item1,
+            numberStep: function(now, tween) {
+              var formatted = now.toFixed(0).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+              $(tween.elem).text(formatted + '+');
+            }
+          },500);
+          $('.results__list .item_2 p').animateNumber({
+            number: item2,
+            numberStep: function(now, tween) {
+              var formatted = now.toFixed(0).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+              $(tween.elem).text(formatted + '+');
+            }
+          },500);
+          $('.results__list .item_3 p').animateNumber({
+            number: item3,
+            numberStep: function(now, tween) {
+              var formatted = now.toFixed(0).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+              $(tween.elem).text(formatted + '+');
+            }
+          },500);
+          $('.results__list .item_4 p').animateNumber(
+            {
+              number: item4,
+              numberStep: function(now, tween) {
+                var formatted = now.toFixed(0).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+                $(tween.elem).text(formatted + '+');
+              }
+            },
+            500
+          );
+          $('.results__list .item_5 p').animateNumber(
+            {
+              number: item5,
+              numberStep: function(now, tween) {
+                var formatted = now.toFixed(0).replace(/(\d)(?=(\d{3})+\.)/g, '$1,');
+                $(tween.elem).text(formatted + '+');
+              }
+            },
+            500
+          );
+          $('.results__list .item').addClass('stop');
+        }
+      });
+    }
+
+// ==== // animation number =======================================================
 
 
 
@@ -1054,23 +1149,43 @@ function togglePlayPause(video,btn) {
 	if(video) {
 		let videoContainer = document.querySelector('.bg-video');
 		let btn = videoContainer.querySelector('.bg-video__play-pause')
+		let btnTitle = document.querySelector('.banner-header__title');
 
 		let timerId;
 	
 		btn.addEventListener('click', () => {
-			togglePlayPause(video, btn)
+			if(document.documentElement.clientWidth >= 992) {
+				togglePlayPause(video, btn)
+			}
 		});
+
+		btnTitle.addEventListener('click', () => {
+			if(document.documentElement.clientWidth >= 992) {
+				togglePlayPause(video, btn)
+			}
+		});
+
+		btnTitle.addEventListener('mousemove', () => {
+			btn.style.border = '8px solid rgba(255, 255, 255, 1)';
+			btn.style.color = 'rgba(255, 255, 255, 1)';
+		})
+
+		btnTitle.addEventListener('mouseout', () => {
+			btn.style.border = '8px solid rgba(255, 255, 255, 0.4)';
+			btn.style.color = 'rgba(255, 255, 255, 0.4)';
+		})
 
 		videoContainer.addEventListener('mousemove', (e) => {
 
 			let btn = e.target.closest('.bg-video').querySelector('.bg-video__play-pause');
 			btn.style.opacity = '1';
 	
-			clearTimeout(timerId);
-			timerId = setTimeout(() => {
-				btn.style.opacity = '0';
-			}, 3000);
-
+			if(!video.paused) {
+				clearTimeout(timerId);
+				timerId = setTimeout(() => {
+					btn.style.opacity = '0';
+				}, 3000);
+			}
 
 		})
 	}
@@ -1078,6 +1193,7 @@ function togglePlayPause(video,btn) {
 
 {
 	let video = document.querySelector('.bg-video__video-2');
+	let btnTitle = document.querySelector('.new__title');
 	if(video) {
 		let videoContainer = document.querySelector('.bg-video-2');
 		let btn = videoContainer.querySelector('.bg-video__play-pause-2')
@@ -1085,18 +1201,39 @@ function togglePlayPause(video,btn) {
 		let timerId;
 	
 		btn.addEventListener('click', () => {
-			togglePlayPause(video, btn)
+			if(document.documentElement.clientWidth >= 992) {
+				togglePlayPause(video, btn)
+			}
 		});
+
+
+		btnTitle.addEventListener('click', () => {
+			if(document.documentElement.clientWidth >= 992) {
+				togglePlayPause(video, btn)
+			}
+		});
+
+		btnTitle.addEventListener('mousemove', () => {
+			btn.style.border = '8px solid rgba(255, 255, 255, 1)';
+			btn.style.color = 'rgba(255, 255, 255, 1)';
+		})
+
+		btnTitle.addEventListener('mouseout', () => {
+			btn.style.border = '8px solid rgba(255, 255, 255, 0.4)';
+			btn.style.color = 'rgba(255, 255, 255, 0.4)';
+		})
 
 		videoContainer.addEventListener('mousemove', (e) => {
 
 			let btn = e.target.closest('.bg-video-2').querySelector('.bg-video__play-pause-2');
 			btn.style.opacity = '1';
 	
-			clearTimeout(timerId);
-			timerId = setTimeout(() => {
-				btn.style.opacity = '0';
-			}, 3000);
+			if(!video.paused) {
+				clearTimeout(timerId);
+				timerId = setTimeout(() => {
+					btn.style.opacity = '0';
+				}, 3000);
+			}
 
 
 		})
